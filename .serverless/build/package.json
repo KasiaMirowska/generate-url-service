@@ -1,0 +1,11 @@
+{
+  "name": "generate-url-service",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "npm run build && serverless deploy",
+    "remove": "serverless remove",
+    "offline": "serverless offline start"
+  },
+  "dependencies": {}
+}

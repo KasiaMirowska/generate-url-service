@@ -1,0 +1,43 @@
+service: generate-url-service
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  architecture: x86_64
+  region: us-east-1
+  environment:
+    S3_BUCKET: km-expense-tracker-receipts
+  httpApi:
+    cors:
+      allowedOrigins:
+        - http://localhost:3000
+      allowedMethods:
+        - GET
+        - POST
+        - PUT
+        - OPTIONS
+      allowedHeaders:
+        - Content-Type
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+      Resource: arn:aws:s3:::km-expense-tracker-receipts/uploads/*
+
+functions:
+  generatePresignedUrl:
+    handler: src/generateUrl.handler
+    events:
+      - httpApi:
+          path: /generate-presigned-url
+          method: get
+
+custom:
+  esbuild:
+    bundle: true
+    minify: true
+    target: node18
+    platform: node
+
+package:
+  individually: true
