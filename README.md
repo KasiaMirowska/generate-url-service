@@ -20,3 +20,27 @@ GET /generate-presigned-url?fileName=myfile.jpg&fileType=image/jpeg&receiptId=ab
   "key": "abc123/image_0.jpg"
 }
 ```
+---
+ Workflow Summary: 
+
+• User uploads receipt via client (drag & drop box).
+
+• Client dispatches uploadReceiptImages():
+
+• Calls generate-url-service for presigned S3 URL.
+
+• Uploads the image + a manifest.json with metadata.
+
+• S3 triggers receiptProcessor Lambda:
+
+• Reads receipt image and manifest.json
+
+• Parses it using Textract + Claude 3
+
+• Writes the structured transaction to Firestore
+
+• Client displays receipt preview and parsed data (with loading state)
+
+---
+👩‍💻 Author
+Built by Kasia Mirowska – blending creative design sensibility with modern serverless architecture 💡
