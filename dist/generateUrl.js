@@ -32,6 +32,7 @@ export const handler = (event) => __awaiter(void 0, void 0, void 0, function* ()
             Key: key,
             ContentType: fileType,
         }), { expiresIn: 60 });
+        console.log("here the url to S3 receipt storage", url);
         return {
             statusCode: 200,
             headers: {

@@ -27,6 +27,7 @@ var handler = async (event) => {
       }),
       { expiresIn: 60 }
     );
+    console.log("here the url to S3 receipt storage", url);
     return {
       statusCode: 200,
       headers: {

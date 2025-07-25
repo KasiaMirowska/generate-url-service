@@ -1,6 +1,6 @@
 {
   "/Users/kasiamirowska/PROJECTS/generate-url-service/serverless.yml": {
-    "versionFramework": "4.17.0",
+    "versionFramework": "4.17.1",
     "servicePath": "/Users/kasiamirowska/PROJECTS/generate-url-service/serverless.yml",
     "serviceConfigFileName": "serverless.yml",
     "service": {
@@ -140,7 +140,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-34bed064-1ad4",
-                  "S3Key": "serverless/generate-url-service/dev/1749584290091-2025-06-10T19:38:10.091Z/generate-url-service-generatePresignedUrl.zip"
+                  "S3Key": "serverless/generate-url-service/dev/1753209292479-2025-07-22T18:34:52.479Z/generate-url-service-generatePresignedUrl.zip"
                 },
                 "Handler": "src/generateUrl.handler",
                 "Runtime": "nodejs18.x",
@@ -167,14 +167,14 @@
                 "GeneratePresignedUrlLogGroup"
               ]
             },
-            "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8": {
+            "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GeneratePresignedUrlLambdaFunction"
                 },
-                "CodeSha256": "JEHR5OmOUvNlPzXdxabftGbgWPxlfPPLRHUUVaN5MsY="
+                "CodeSha256": "APIDYS5amUbd44YuEzmnwNSLoXjG71uIf06CUu/aopU="
               }
             },
             "HttpApi": {
@@ -298,7 +298,7 @@
             "GeneratePresignedUrlLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8"
+                "Ref": "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc"
               },
               "Export": {
                 "Name": "sls-generate-url-service-dev-GeneratePresignedUrlLambdaFunctionQualifiedArn"
@@ -366,7 +366,7 @@
           "timeout": 6,
           "runtime": "nodejs18.x",
           "vpc": {},
-          "versionLogicalId": "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8"
+          "versionLogicalId": "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc"
         }
       },
       "custom": {
@@ -381,7 +381,7 @@
         "individually": true,
         "artifactsS3KeyDirname": "serverless/generate-url-service/dev/code-artifacts",
         "deploymentBucket": "serverless-framework-deployments-us-east-1-34bed064-1ad4",
-        "artifactDirectoryName": "serverless/generate-url-service/dev/1749584290091-2025-06-10T19:38:10.091Z"
+        "artifactDirectoryName": "serverless/generate-url-service/dev/1753209292479-2025-07-22T18:34:52.479Z"
       }
     },
     "provider": {
@@ -519,7 +519,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-34bed064-1ad4",
-                "S3Key": "serverless/generate-url-service/dev/1749584290091-2025-06-10T19:38:10.091Z/generate-url-service-generatePresignedUrl.zip"
+                "S3Key": "serverless/generate-url-service/dev/1753209292479-2025-07-22T18:34:52.479Z/generate-url-service-generatePresignedUrl.zip"
               },
               "Handler": "src/generateUrl.handler",
               "Runtime": "nodejs18.x",
@@ -546,14 +546,14 @@
               "GeneratePresignedUrlLogGroup"
             ]
           },
-          "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8": {
+          "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GeneratePresignedUrlLambdaFunction"
               },
-              "CodeSha256": "JEHR5OmOUvNlPzXdxabftGbgWPxlfPPLRHUUVaN5MsY="
+              "CodeSha256": "APIDYS5amUbd44YuEzmnwNSLoXjG71uIf06CUu/aopU="
             }
           },
           "HttpApi": {
@@ -677,7 +677,7 @@
           "GeneratePresignedUrlLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8"
+              "Ref": "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc"
             },
             "Export": {
               "Name": "sls-generate-url-service-dev-GeneratePresignedUrlLambdaFunctionQualifiedArn"
@@ -741,20 +741,20 @@
     "userName": "kasiamiro",
     "serviceProviderAwsAccountId": "393456671484",
     "serviceProviderAwsCfStackName": "generate-url-service-dev",
-    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:393456671484:stack/generate-url-service-dev/7205b090-4632-11f0-bbb8-1271428e233b",
-    "serviceProviderAwsCfStackCreated": "2025-06-10T19:38:12.517Z",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:393456671484:stack/generate-url-service-dev/8fceafa0-672a-11f0-8af6-0e1ba48da181",
+    "serviceProviderAwsCfStackCreated": "2025-07-22T18:34:54.850Z",
     "serviceProviderAwsCfStackUpdated": null,
     "serviceProviderAwsCfStackStatus": "CREATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "GeneratePresignedUrlLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:393456671484:function:generate-url-service-dev-generatePresignedUrl:10",
+        "OutputValue": "arn:aws:lambda:us-east-1:393456671484:function:generate-url-service-dev-generatePresignedUrl:12",
         "Description": "Current Lambda function version",
         "ExportName": "sls-generate-url-service-dev-GeneratePresignedUrlLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "HttpApiId",
-        "OutputValue": "1wqyztt31g",
+        "OutputValue": "stej0scudl",
         "Description": "Id of the HTTP API",
         "ExportName": "sls-generate-url-service-dev-HttpApiId"
       },
@@ -765,7 +765,7 @@
       },
       {
         "OutputKey": "HttpApiUrl",
-        "OutputValue": "https://1wqyztt31g.execute-api.us-east-1.amazonaws.com",
+        "OutputValue": "https://stej0scudl.execute-api.us-east-1.amazonaws.com",
         "Description": "URL of the HTTP API",
         "ExportName": "sls-generate-url-service-dev-HttpApiUrl"
       }
@@ -870,7 +870,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-34bed064-1ad4",
-              "S3Key": "serverless/generate-url-service/dev/1749584290091-2025-06-10T19:38:10.091Z/generate-url-service-generatePresignedUrl.zip"
+              "S3Key": "serverless/generate-url-service/dev/1753209292479-2025-07-22T18:34:52.479Z/generate-url-service-generatePresignedUrl.zip"
             },
             "Handler": "src/generateUrl.handler",
             "Runtime": "nodejs18.x",
@@ -897,14 +897,14 @@
             "GeneratePresignedUrlLogGroup"
           ]
         },
-        "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8": {
+        "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GeneratePresignedUrlLambdaFunction"
             },
-            "CodeSha256": "JEHR5OmOUvNlPzXdxabftGbgWPxlfPPLRHUUVaN5MsY="
+            "CodeSha256": "APIDYS5amUbd44YuEzmnwNSLoXjG71uIf06CUu/aopU="
           }
         },
         "HttpApi": {
@@ -1027,7 +1027,7 @@
         "GeneratePresignedUrlLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8"
+            "Ref": "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc"
           },
           "Export": {
             "Name": "sls-generate-url-service-dev-GeneratePresignedUrlLambdaFunctionQualifiedArn"

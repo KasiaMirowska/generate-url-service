@@ -135,7 +135,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-34bed064-1ad4",
-                "S3Key": "serverless/generate-url-service/dev/1749584290091-2025-06-10T19:38:10.091Z/generate-url-service-generatePresignedUrl.zip"
+                "S3Key": "serverless/generate-url-service/dev/1753209292479-2025-07-22T18:34:52.479Z/generate-url-service-generatePresignedUrl.zip"
               },
               "Handler": "src/generateUrl.handler",
               "Runtime": "nodejs18.x",
@@ -162,14 +162,14 @@
               "GeneratePresignedUrlLogGroup"
             ]
           },
-          "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8": {
+          "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GeneratePresignedUrlLambdaFunction"
               },
-              "CodeSha256": "JEHR5OmOUvNlPzXdxabftGbgWPxlfPPLRHUUVaN5MsY="
+              "CodeSha256": "APIDYS5amUbd44YuEzmnwNSLoXjG71uIf06CUu/aopU="
             }
           },
           "HttpApi": {
@@ -289,7 +289,7 @@
           "GeneratePresignedUrlLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8"
+              "Ref": "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc"
             },
             "Export": {
               "Name": "sls-generate-url-service-dev-GeneratePresignedUrlLambdaFunctionQualifiedArn"
@@ -366,7 +366,7 @@
         "timeout": 6,
         "runtime": "nodejs18.x",
         "vpc": {},
-        "versionLogicalId": "GeneratePresignedUrlLambdaVersioneCHLmsmTGF8XGwvn7ltoJEetX5KNIGAJ0LY21Wc8"
+        "versionLogicalId": "GeneratePresignedUrlLambdaVersionKnESXeJqaI3fZ4WFZ7UcC5oeySwV7rnMvwIjGSzAc"
       }
     },
     "configValidationMode": "warn",
@@ -386,7 +386,7 @@
         "individually": true,
         "artifactsS3KeyDirname": "serverless/generate-url-service/dev/code-artifacts",
         "deploymentBucket": "serverless-framework-deployments-us-east-1-34bed064-1ad4",
-        "artifactDirectoryName": "serverless/generate-url-service/dev/1749584290091-2025-06-10T19:38:10.091Z"
+        "artifactDirectoryName": "serverless/generate-url-service/dev/1753209292479-2025-07-22T18:34:52.479Z"
       }
     },
     "appId": null,
@@ -395,7 +395,7 @@
   },
   "package": {
     "individually": true,
-    "artifactDirectoryName": "serverless/generate-url-service/dev/1749584290091-2025-06-10T19:38:10.091Z",
+    "artifactDirectoryName": "serverless/generate-url-service/dev/1753209292479-2025-07-22T18:34:52.479Z",
     "artifact": ""
   }
 }
